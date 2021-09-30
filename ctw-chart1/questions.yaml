@@ -1,14 +1,25 @@
 questions:
-- variable: cluster.name
-  default: mycluster
-  description: "Specify the name of the cluster"
+- variable: secret-1
+  description: "a secret from the cluster"
   label: "Cluster Name"
   required: true
   type: secret
   group: "General"
-- variable: cloudCredentialSecretName
+- variable: config-map
   default:
-  description: "CloudCredentialName for provisioning cluster"
-  label: "CloudCredential Name"
-  type: vpc
+  description: "config map"
+  label: "config map Name"
+  type: configmap
+  group: "General"
+- variable: PVC
+  default:
+  description: "PVC for storage"
+  label: "PVC Name"
+  type: pvc
+  group: "General"
+- variable: storage-class
+  default:
+  description: "storage class for . . .  storage"
+  label: "storage class Name"
+  type: storageclass
   group: "General"
