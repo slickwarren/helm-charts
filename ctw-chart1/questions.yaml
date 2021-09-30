@@ -27,5 +27,5 @@ questions:
   default:
   description: "pv -> persistent volume"
   label: "pv Name"
-  type: persistentvolume
+  type: persistent-volume
   group: "General"
