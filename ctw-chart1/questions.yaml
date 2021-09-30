@@ -23,3 +23,9 @@ questions:
   label: "storage class Name"
   type: storageclass
   group: "General"
+- variable: pv
+  default:
+  description: "pv -> persistent volume"
+  label: "pv Name"
+  type: pv
+  group: "General"
